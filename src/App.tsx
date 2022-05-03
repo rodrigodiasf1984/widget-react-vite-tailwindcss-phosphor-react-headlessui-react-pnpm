@@ -1,18 +1,7 @@
-type ButtonProps = {
-  text: string
-}
-function Button({ text }: ButtonProps) {
-  return <button className="bg-red-300">{text}</button>
-}
+import { Widget } from './components/Widget'
 
-function App() {
-  return (
-    <>
-      <Button text="Enviar" />
-      <Button text="Cancelar" />
-      <Button text="Salvar" />
-    </>
-  )
+export function App() {
+  return <Widget />
 }
 
 export default App
